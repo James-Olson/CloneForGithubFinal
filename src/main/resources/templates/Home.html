@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>James Olson</title>
+    <link rel="icon" th:href="@{/img/Icon.svg}">
+    <link rel="stylesheet" th:href="@{/CSS/Home.css}" type="text/css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/43d20c2690.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+        <div class="ScrollSmoother">
+            <div id="landingcontainer">
+
+                <!--<img id="curtain" src="../static/img/Curtain.png">-->
+                <video id="covermovie" loop autoplay muted>
+                    <!--<source src='../static/img/CoverMovie.mp4' type="video/mp4">-->
+
+                </video>
+                <span id="james">James</span>
+                <span id="olson" class="name">Olson</span>
+            </div>
+            <div id="aboutme">
+
+    <span id="aboutmetextupper">As a software engineer my experience in programming languages,
+                        libraries, frameworks and database management systems allows me to efficiently develop practical data flow sequences. Utilizing
+                        full-stack web development talent I complete the developer task, entirely independent.
+    </span>
+                <ul>
+                    <li><a id="linkedin" target="_blank" href="https://www.linkedin.com/in/james-olson456/"><i
+                            class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><span id="email"><i class="fa-regular fa-envelope" aria-hidden="true"></i></span></li>
+                    <li><a id="github" target="_blank" href="https://github.com/James-Olson"><i
+                            class="fa-brands fa-github"
+                            aria-hidden="true"></i></a>
+                    </li>
+                    <li><span id="resume"><i class="fa-regular fa-file" aria-hidden="true"></i></span></li>
+                </ul>
+                <div id="icontextdiv">
+                    <span class="icontextspan" id="linkedintext">Visit my LinkedIn</span>
+                    <span class="icontextspan" id="emailtext">Contact Me</span>
+                    <span class="icontextspan" id="githubtext">Visit my Github</span>
+                    <span class="icontextspan" id="resumetext">View my Resume</span>
+                </div>
+
+                <span class="aboutmefade" id="aboutmetextlower"> An ability to lead and to work collaboratively makes me a valuable asset to a software development team. I look forward to
+
+        delivering innovative software for the most meaningful reason.</span>
+                <!--        <div class="homelinecontainer">
+                            <svg viewBox="0 0 1500 200" class="homelineviewbox">
+                                <defs>
+                                    <linearGradient id="gradient1" x1="1000%" y2="1000%">
+                                        <stop offset="50%" style="stop-color: grey"/>
+                                        <stop offset="50%" style="stop-color: lightblue">
+                                            <animate attributeName="offset" values="0.4;1" dur="6s" repeatCount="indefinite"/>
+                                        </stop>
+                                        <stop offset="50%" style="stop-color: gray"/>
+                                    </linearGradient>
+                                </defs>
+                                <polyline points="0,5 150,5 300,5 300,5 450,5 600,5 800,5 900,5 1000,100 1100,200" id="homeline"
+                                          stroke="url(#gradient1)"
+                                          fill="white"
+                                          stroke-width="1">
+                                </polyline>
+                            </svg>
+                        </div>-->
+            </div>
+            <form>
+                <h1 id="nameheading">What can I call you?</h1>
+                <div id="namecontainer">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nameinput"
+                               placeholder="Ex. Mr. Smith">
+                    </div>
+                </div>
+                <h1 id="respondheading">How can I respond to you?</h1>
+                <div id="emailcontainer">
+                    <div class="form-group" id="emailcontainerwidth">
+                        <label for="emailinput" id="emailinputlabel">Whats your email address?</label>
+                        <input type="email" id="emailinput" class="form-control" placeholder="Ex. johndoe36@yahoo.com">
+                        <span id="myemail">My email:</span>
+                        <span id="myemail2">jamesolson377@gmail.com</span>
+                    </div>
+                </div>
+                <div id="phonenumbercontainer">
+                    <div class="form-group" id="phonenumbercontainerwidth">
+                        <label for="phonenumberinput" id="phonenumberinputlabel">Whats your telephone number?</label>
+                        <input type="text" id="phonenumberinput" class="form-control" placeholder="Ex. (565) 565-4800">
+                    </div>
+                </div>
+                <h1 id="helpheading">How may I help you?</h1>
+                <div id="helpcontainer">
+                    <div class="form-group" id="helpcontainerwidth">
+                        <textarea class="form-control" id="helpinput" rows="5"></textarea>
+                    </div>
+                </div>
+                <svg id="backsvg" width="219px" height="56px" viewBox="0 0 219 56">
+                    <defs>
+                        <linearGradient id="grad" x1="150%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color: rgba(255, 255, 255, 1)"/>
+                            <stop offset="75%" style="stop-color: #5CA4EA"/>
+                            <stop offset="100%" style="stop-color: #5CA4EA"/>
+                        </linearGradient>
+                    </defs>
+                    <polyline points="219,0 219,56 0,56 0,0 219,0" class="bg-line" stroke="url(#grad)"
+                              stroke-width="2"/>
+                    <polyline points="219,0 219,56 0,56 0,0 219,0" class="hl-line" stroke="url(#grad)"
+                              stroke-width="2"/>
+                </svg>
+                <div id="backhomeclicker"></div>
+                <div class="backbuttoncontainer">
+                    <label for="backhome" class="backhomelabel">
+                        <button id="backhome" class="backhomebutton"></button>
+                        Back To Home
+                    </label>
+                </div>
+                <svg id="submitsvg" width="219px" height="56px" viewBox="0 0 219 56">
+                    <defs>
+                        <linearGradient id="grad" x1="150%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color: rgba(255, 255, 255, 1)"/>
+                            <stop offset="75%" style="stop-color: #5CA4EA"/>
+                            <stop offset="100%" style="stop-color: #5CA4EA"/>
+                        </linearGradient>
+                    </defs>
+                    <polyline points="219,0 219,56 0,56 0,0 219,0" class="bg-line" stroke="url(#grad)"
+                              stroke-width="2"/>
+                    <polyline points="219,0 219,56 0,56 0,0 219,0" class="hl-line" stroke="url(#grad)"
+                              stroke-width="2"/>
+                </svg>
+                <div class="submitbuttoncontainer">
+                    <label for="submit" class="submitlabel">
+                        <input type="submit" id="submit" class="formsubmit">
+                        Send
+                    </label>
+                </div>
+                <svg id="filesvg" width="219px" height="56px" viewBox="0 0 219 56">
+                    <defs>
+                        <linearGradient id="grad" x1="150%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color: rgba(255, 255, 255, 1)"/>
+                            <stop offset="75%" style="stop-color: #5CA4EA"/>
+                            <stop offset="100%" style="stop-color: #5CA4EA"/>
+                        </linearGradient>
+                    </defs>
+                    <polyline points="219,0 219,56 0,56 0,0 219,0" class="bg-line" stroke="url(#grad)"
+                              stroke-width="2"/>
+                    <polyline points="219,0 219,56 0,56 0,0 219,0" class="hl-line" stroke="url(#grad)"
+                              stroke-width="2"/>
+                </svg>
+                <div class="filebuttoncontainer">
+                    <label for="file" class="fileinputlabel">
+                        <input type="file" id="file" class="fileinput" onchange="ChooseFileNameDisplay()">
+                        Add Attachment
+                    </label>
+                </div>
+                <svg id="removesvg" width="219px" height="56px" viewBox="0 0 219 56">
+                    <defs>
+                        <linearGradient id="grad" x1="150%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color: rgba(255, 255, 255, 1)"/>
+                            <stop offset="75%" style="stop-color: #5CA4EA"/>
+                            <stop offset="100%" style="stop-color: #5CA4EA"/>
+                        </linearGradient>
+                    </defs>
+                    <polyline points="219,0 219,56 0,56 0,0 219,0" class="bg-line" stroke="url(#grad)"
+                              stroke-width="2"/>
+                    <polyline points="219,0 219,56 0,56 0,0 219,0" class="hl-line" stroke="url(#grad)"
+                              stroke-width="2"/>
+                </svg>
+                <div class="removefilebuttoncontainer">
+                    <label for="removefile" class="removefileinputlabel">
+                        <button id="removefile" class="removefileinput"></button>
+                        Remove Attachment
+                    </label>
+                </div>
+                <div id="selectedFile" class="filename"></div>
+            </form>
+            <div id="cursiveHeader">
+                <span class="cursiveheaderspan" id="cursiveHeaderText3">- Full Stack Software Engineer -</span>
+                <span class="cursiveheaderspan" id="cursiveHeaderText2">- Information Technology -</span>
+                <span class="cursiveheaderspan" id="cursiveHeaderText1">- Data Science -</span>
+            </div>
+            <div id="projectpage">
+                <div class="cube"></div>
+            </div>
+            <div> this is a div addation</div>
+        </div>
+    </div>
+</div>
+
+<!--<div id="projectheader">Projects</div>&lt;!&ndash;goes to top left on scroll&ndash;&gt;
+<div id="projectdisplay">
+    <div id="brewquestdiv">
+        <img id="brewquestimg1" th:src='@{/img/brewquest1.png}'>
+        <img id="brewquestimg2" th:src='@{/img/brewquest2.png}'>
+        <img id="brewquestimg3" th:src='@{/img/brewquest3.png}'>
+        <img id="brewquestimg4" th:src='@{/img/brewquest4.png}'>
+        <span>Brewquest is a project</span>
+    </div>
+    <div id="coffeetimediv">
+        <img id="coffeetimeimg1" th:src='@{/img/coffeetime1.png}'>
+        <img id="coffeetimeimg2" th:src='@{/img/coffeetime2.png}'>
+        <img id="coffeetimeimg3" th:src='@{/img/coffeetime3.png}'>
+        <img id="coffeetimeimg4" th:src='@{/img/coffeetime4.png}'>
+        <span>Coffeetime is a project</span>
+    </div>
+    <div id="jaxadlisterdiv">
+        <img id="jaxadlisterimg1" th:src='@{/img/jaxadlister1.png}'>
+        <img id="jaxadlisterimg2" th:src='@{/img/jaxadlister2.png}'>
+        <img id="jaxadlisterimg3" th:src='@{/img/jaxadlister3.png}'>
+        <img id="jaxadlisterimg4" th:src='@{/img/jaxadlister4.png}'>
+        <span>Jaxadlister is a project</span>
+    </div>
+</div>-->
+
+<script type="text/javascript" src="../static/JS/addation.js"></script>
+<script type="module" src="../static/JS/SplitText.js"></script>
+<script type="text/javascript" src="../static/JS/RefreshFunction.js"></script>
+<script type="module" src="../static/JS/ScrollFunction.js"></script>
+<script type="text/javascript" src="../static/JS/Button.js"></script>
+<script type="text/javascript" src="../static/JS/Validation.js"></script>
+<script type="text/javascript" src="../static/JS/FirstPageBuild.js"></script>
+<script type="text/javascript" src="../static/JS/AboutMeTransitions.js"></script>
+<script type="text/javascript" src="../static/JS/ChooseFileNameDisplay.js"></script>
+<script type="text/javascript" src="../static/JS/NameDisplay.js"></script>
+<script type="text/javascript" src="../static/JS/CurtainFunction.js"></script>
+
+<!--<script type="text/javascript" th:src="@{/JS/SplitText.js}"></script>
+<script type="text/javascript" th:src="@{/JS/RefreshFunction.js}"></script>
+<script type="text/javascript" th:src="@{/JS/ScrollFunction.js}"></script>
+<script type="text/javascript" th:src="@{/JS/Button.js}"></script>
+<script type="text/javascript" th:src="@{/JS/Validation.js}"></script>
+<script type="text/javascript" th:src="@{/JS/FirstPageBuild.js}"></script>
+<script type="text/javascript" th:src="@{/JS/AboutMeTransitions.js}"></script>
+<script type="text/javascript" th:src="@{/JS/ChooseFileNameDisplay.js}"></script>
+<script type="text/javascript" th:src="@{/JS/NameDisplay.js}"></script>
+<script type="text/javascript" th:src="@{/JS/CurtainFunction.js}"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
